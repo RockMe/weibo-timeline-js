@@ -94,7 +94,7 @@ XPlusZ.WeiboHanlder = {
                         for (var i = start; i < end; i++) {
                             sub.push($this.dataSource[i]);
                         };
-                        console.log(sub);
+                        //console.log(sub);
                         $($this.contentContainer).empty();
                         $this.tmplContent.tmpl(sub).appendTo($this.contentContainer);
                         $this.showProgress(false);
