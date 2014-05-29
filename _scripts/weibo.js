@@ -14,7 +14,7 @@ XPlusZ.Configs = {};
 XPlusZ.Configs.Weibo = {
     Count: 200,
     PageSize: 10,
-    SerectKey: '######################################',
+    SerectKey: '2.008GgngBchRtjC12008e2ca0vcdA3C',
     TimeLineAPI: 'https://api.weibo.com/2/statuses/public_timeline.json'
 };
 
