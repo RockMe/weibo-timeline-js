@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Weibo TimeLine</title>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet"type="text/css" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/_scripts/jquery.tmpl.min.js" type="text/javascript"></script>
+    <link href="/_styles/Site.css" rel="stylesheet" type="text/css" />
+    <script src="/_scripts/weibo.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="weib-header">
+            <h3>
+                Sina Weibo Time Line</h3>
+            <hr />
+        </div>
+        <div class="weib-pagination">
+            <ul class="pagination">
+            </ul>
+        </div>
+        <div id="weibo-container" class="row-container">
+        </div>
+        <div class="weib-pagination">
+            <ul class="pagination">
+            </ul>
+        </div>
+    </div>
+    <div id="progress" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <i class="fa fa-spinner fa-spin fa-3x"></i>
+                    <br />
+                    LOADING DATA......PLEASE WAIT FOR A MONMENT.
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <script id="tmplTimeLine" type="text/x-jquery-tmpl">
+            <div class="row-fluid clearfix">
+                <div class="col-md-2">            
+                    <img src="${user.profile_image_url}" alt="" class="img-thumbnail" />                                    
+                    <h5>${user.name}</h5>
+                </div>
+                <div class="col-md-10 weibo-text">
+                    ${text}
+                </div>
+            </div>
+    </script>
+    <script id="tmplPagination" type="text/x-jquery-tmpl">
+            <li><a href="javascript:void(0)" data-index="${$data}">${$data}</a></li>
+    </script>
+</body>
+</html>
