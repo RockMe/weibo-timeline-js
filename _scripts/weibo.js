@@ -1,6 +1,6 @@
 ﻿/*
 * weibo timeline handling module
-* Author: Tsuhui.Li, Ver 1.0
+* Author: Tsuhui, Ver 1.0
 * Created At May 30th,2014  
 */
 
